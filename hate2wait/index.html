@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" href="reset.css" />
+   <link rel="stylesheet" type="text/css" href="style.css" />
+   <link rel="shortcut icon" href="favicon.ico" size="32x32" type="image/png" />
+   <title>About Us | Hate2Wait</title>
+
+</head>
+<body>
+   <header>
+   <div class="bg-image"></div>
+     <div class="Hate2Wait-logo"><a href="index.html"><button style=" background-color: #FFF;color: black;padding: 14px 20px;margin: 8px 0;border: none;cursor: pointer;width: 100%;text-align:left;font-size:30px;cursor:pointer">Hate2Wait</button></a></div>
+     <nav>
+	 <!-- The overlay -->
+<div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="#">About</a>
+  </div>
+</div>
+<!-- Use any element to open/show the overlay navigation menu -->
+       <a style="font-size:30px;cursor:pointer" onclick="openNav()" class="navigation-item">Why Hate2Wait?</a>
+	   <script>
+         function openNav() {
+             document.getElementById("myNav").style.width = "100%";
+                }
+         function closeNav() {
+             document.getElementById("myNav").style.width = "0%";
+                }
+       </script>
+       <a style="font-size:30px;cursor:pointer" onclick="openNav()" class="navigation-item">About Us</a>
+     </nav>
+   </header>
+   <main>
+      <article>
+          <h1 class="o-hero__header__headline">Making work simpler , less time consuming , and more productive</h1>
+		  <img src="logo.png" height="200px" width="100px" class="logo" >
+          <section>
+             <p>Hate2Wait is the new way to save time and use it for other important works , now you don't have to wait for hours to get your work done . Launched in 2018 , with Hate2Wait you can now generate tokens for getting your mobiles and laptops repaired (online) . Also the users get to know what is the current ongoing token , so that they can save their time , and drive other works forward . From generating tokens to registering the complains , Hate2Wait helps poeple to make better use of their time.</p>
+          </section>
+		      <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Administrator</button>
+                  	<script>
+
+    function validate()
+    {
+        if(document.getElementById('username').value == 'admin' && document.getElementById('pass').value =='password')
+            {
+                alert("User Validated ");
+                /*continue();*/
+            }
+        else
+            {
+                alert('Incorrect Username or Password');
+           }
+
+    }
+	                    </script>
+				<div id="id01" class="login">
+                   <form class="login-content animate" >
+                      <div class="imgcontainer">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Login">&times;</span>
+                        <img src="avatar.jpg" alt="avatar.jpg" class="avatar">
+                      </div>
+                      <div class="container">
+                        <label for="uname"><b>Username</b></label>
+                        <input type="text" id="username" placeholder="Enter Username" name="uname" required>
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" id="pass" placeholder="Enter Password" name="psw" required>
+                        <button onclick="validate()" type="submit">Login</button>
+					              
+                        <label>
+                           <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                      </div>
+                      <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                        <span class="psw">Forgot <a href="#">password?</a></span>
+                      </div>
+                   </form>
+               </div>
+               <script>
+                  // Get the login
+                  var login = document.getElementById('id01');
+				  // When the user clicks anywhere outside of the login, close it
+                  window.onclick = function(event) {
+                  if (event.target == login) {
+                  login.style.display = "show";
+                 }
+                }
+               </script>
+               <a href="customer.html"><button class="btn" style="width:auto;">Customer</button></a>
+          <section>
+              <h2>Nearly 1,000s of peoples uses Hate2Wait (and counting)</h2>
+          </section>
+          <section>
+               <div class="stat-box">
+                    <div class="stat">8K</div>
+                    <div class="label">8 Thousand daily active users .</div>
+               </div>
+               <div class="stat-box">
+                    <div class="stat">65K</div>
+                    <div class="label">65 Thousand enquiries on a daily basis</div>
+                </div> 
+            </section>
+			
+       </article>
+   </main> 
+</body>
+</html>

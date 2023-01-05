@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  
+   <link rel="stylesheet" type="text/css" href="customer.css" />
+   <link rel="shortcut icon" href="favicon.ico" size="32x32" type="image/png" />
+   <title>Welcome Customer</title>
+</head> 
+<body>
+<body>
+   <header>
+   <div class="bg-image"></div>
+     <div class="Hate2Wait-logo"><a href="index.html" style=" background-color: #FFF;color: black;padding: 14px 20px;margin: 8px 0;border: none;width: 100%;text-align:left;font-size:30px;cursor:pointer">Hate2Wait</a></div>
+<nav>
+	 <!-- The overlay -->
+<div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="#">About</a>
+  </div>
+</div>
+<!-- Use any element to open/show the overlay navigation menu -->
+       <a style="font-size:30px;cursor:pointer" onclick="openNav()" class="navigation-item">Why Hate2Wait?</a>
+	   <script>
+         function openNav() {
+             document.getElementById("myNav").style.width = "100%";
+                }
+         function closeNav() {
+             document.getElementById("myNav").style.width = "0%";
+                }
+       </script>
+       <a style="font-size:30px;cursor:pointer" onclick="openNav()" class="navigation-item">About Us</a>
+     </nav>
+   </header>
+   <main>
+      <article>
+<div id="selectDevice1">
+          <h1 class="o-hero__header__headline">Select your Device</h1>
+
+<img src="default-mobile-phone-dealers-iphone-4.jpg" height="200" width="200" class="logo" onclick="selectdDevice('mobile')">
+<img src="x1-tablet-gallery-image.png" height="200" width="200" class="logo"  onclick="selectdDevice('laptop')" >
+
+</div>
+
+
+<style> 
+.company{
+  display:none;
+}
+#formID{
+  display:block;
+}
+</style>
+
+<div id="listMobile" class="company">
+  <h2>Mobile</h2>
+  <ul>
+    <li onclick="setCompany('lenove','mobile')">Lenove </li>
+    <li onclick="setCompany('hp','mobile')">hp</li>
+    <li onclick="setCompany('hcl','mobile')">hcl</li>
+  </ul>
+
+</div>
+
+
+<div id="listLaptop" class="company">
+  
+   <h2>Laptop</h2>
+  <ul>
+    <li onclick="setCompany('lenove','laptop')">Lenove </li>
+    <li onclick="setCompany('hp','laptop')">hp</li>
+    <li onclick="setCompany('hcl','laptop')">hcl</li>
+  </ul>
+
+</div>
+
+
+<div id="formID">
+  <form method="post"  target="_self">
+    <h1>Details</h1>
+    <table>
+
+      <tr>
+        <th>Device</th>
+        <td>
+          <input type="text" name="device" id="devicename" readonly>
+        </td>
+      </tr>
+
+      <tr>
+        <th>Company</th>
+        <td>
+          <input type="text" name="company" id="companyname" readonly>
+        </td>
+      </tr>
+      <tr>
+        <th>Name</th>
+        <td>
+          <input type="text" name="name" required="required" id="username">
+        </td>
+      </tr>
+      <tr>
+        <th>Email</th>
+        <td>
+          <input type="email" name="email" required="required" id="email">
+        </td>
+      </tr>
+      <tr>
+        <th>Mobile</th>
+        <td>
+          <input type="text" name="mobile" required="required" id="mobile">
+        </td>
+      </tr>
+      <tr>
+        <th>Model</th>
+        <td>
+          <input type="text" name="model" required="required" id="model">
+        </td>
+      </tr>
+      <tr>
+        <th>Problem</th>
+        <td>
+          <textarea name="problem" required="required" id="problem"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <th colspan="2">
+          <input type="submit" name="sub" value="save" id="submit">
+          <script type="text/javascript">
+            var submit=document.getElementById("submit");
+            submit.onclick=function(){
+              var device=document.getElementById("devicename").value;
+              var company=document.getElementById("companyname").value;
+              var name=document.getElementById("devicename").value;
+              var email=document.getElementById("devicename").value;
+              var mobile=document.getElementById("devicename").value;
+              var model=document.getElementById("devicename").value;
+              var problem=document.getElementById("devicename").value;
+            }
+
+          </script>
+        </th>
+      </tr>
+    </table>
+  </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="my.js"></script>
+
+
+
+</body>
+</html>  
